@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     fetch("/check_session").then((response) => {
       if (response.ok) {
-        response.json().then((user) => setUser(user));
+        response.json().then((user) => console.log(user));
       }
     });
   }, []);
